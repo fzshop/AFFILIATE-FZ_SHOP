@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FZ_SHOP - Program Affiliate Terpercaya</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+color: #1c3144;
+background-color: #f8fafb;
+line-height: 1.6;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-weight: 700;
+}
+
+nav {
+background: rgba(255, 255, 255, 0.8);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid #e5e7eb;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 50;
+padding: 1rem 0;
+}
+
+.nav-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 1.25rem;
+font-weight: 700;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.logo-icon {
+background: #000000;
+color: white;
+width: 32px;
+height: 32px;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+font-size: 0.875rem;
+}
+
+.nav-links {
+display: flex;
+gap: 2rem;
+list-style: none;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #1c3144;
+font-size: 0.875rem;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.nav-links a:hover {
+color: #ee4d2d;
+}
+
+.cta-button {
+background: #ee4d2d;
+color: white;
+padding: 0.75rem 1.5rem;
+border-radius: 9999px;
+text-decoration: none;
+font-weight: 600;
+transition: all 0.3s;
+border: none;
+cursor: pointer;
+box-shadow: 0 10px 20px rgba(238, 77, 45, 0.2);
+display: inline-block;
+}
+
+.cta-button:hover {
+background: #d63d1f;
+transform: translateY(-2px);
+box-shadow: 0 15px 30px rgba(238, 77, 45, 0.3);
+}
+
+.cta-button-outline {
+background: transparent;
+color: #1c3144;
+border: 2px solid #e5e7eb;
+padding: 0.6rem 1.5rem;
+}
+
+.cta-button-outline:hover {
+background: #f3f4f6;
+border-color: #ee4d2d;
+}
+
+.hero {
+margin-top: 80px;
+padding: 80px 0;
+background: linear-gradient(135deg, rgba(254, 205, 158, 0.1) 0%, transparent 100%);
+}
+
+.hero-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.hero-text h1 {
+font-size: 3rem;
+line-height: 1.2;
+margin-bottom: 1rem;
+color: #0f172a;
+}
+
+.hero-text h1 .highlight {
+background: linear-gradient(135deg, #ee4d2d, #ff7350);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.hero-text .badge {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+background: rgba(238, 77, 45, 0.1);
+border: 1px solid rgba(238, 77, 45, 0.2);
+color: #ee4d2d;
+padding: 0.5rem 1rem;
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.hero-text .badge .dot {
+width: 6px;
+height: 6px;
+background: #ee4d2d;
+border-radius: 50%;
+animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.5; }
+}
+
+.hero-text p {
+font-size: 1.125rem;
+color: #666;
+margin-bottom: 2rem;
+line-height: 1.7;
+}
+
+.hero-buttons {
+display: flex;
+gap: 1rem;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+}
+
+.hero-trust-badges {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.badge-item {
+background: #f3f4f6;
+padding: 0.75rem 1rem;
+border-radius: 0.5rem;
+border: 1px solid #e5e7eb;
+font-size: 0.875rem;
+font-weight: 500;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+
+.badge-item .icon {
+color: #ee4d2d;
+font-weight: bold;
+}
+
+.hero-image {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero-image img {
+max-width: 100%;
+height: auto;
+border-radius: 24px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.5);
+transform: rotate(2deg);
+transition: transform 0.5s;
+}
+
+.hero-image img:hover {
+transform: rotate(0deg);
+}
+
+section {
+padding: 60px 0;
+}
+
+section h2 {
+font-size: 2.25rem;
+margin-bottom: 1rem;
+text-align: center;
+color: #0f172a;
+}
+
+section .subtitle {
+text-align: center;
+color: #666;
+font-size: 1.125rem;
+margin-bottom: 3rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.audience {
+background: rgba(238, 77, 45, 0.05);
+border-top: 1px solid #e5e7eb;
+border-bottom: 1px solid #e5e7eb;
+}
+
+.audience-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
+}
+
+.audience-card {
+background: white;
+padding: 1.5rem;
+border-radius: 1rem;
+border: 1px solid #e5e7eb;
+transition: all 0.3s;
+}
+
+.audience-card:hover {
+border-color: #ee4d2d;
+box-shadow: 0 10px 20px rgba(238, 77, 45, 0.1);
+transform: translateY(-5px);
+}
+
+.audience-card .icon-circle {
+width: 50px;
+height: 50px;
+background: rgba(238, 77, 45, 0.1);
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ee4d2d;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.audience-card h3 {
+margin-bottom: 0.5rem;
+font-size: 1.125rem;
+}
+
+.audience-card p {
+color: #666;
+font-size: 0.875rem;
+}
+
+.benefits {
+background: white;
+}
+
+.benefits-layout {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.benefits-image {
+order: 2;
+}
+
+.benefits-image img {
+max-width: 100%;
+height: auto;
+border-radius: 24px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-list {
+order: 1;
+}
+
+.benefit-item {
+display: flex;
+gap: 1rem;
+margin-bottom: 1.5rem;
+}
+
+.benefit-item .number {
+width: 40px;
+height: 40px;
+background: rgba(238, 77, 45, 0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ee4d2d;
+font-weight: bold;
+flex-shrink: 0;
+}
+
+.benefit-item h4 {
+font-size: 1rem;
+margin-bottom: 0.25rem;
+}
+
+.benefit-item p {
+color: #666;
+font-size: 0.875rem;
+}
+
+.how-it-works {
+background: #f9fafb;
+}
+
+.steps-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 2rem;
+}
+
+.step {
+text-align: center;
+}
+
+.step-number {
+width: 80px;
+height: 80px;
+background: white;
+border: 4px solid #e5e7eb;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+font-weight: bold;
+color: #ee4d2d;
+margin: 0 auto 1rem;
+transition: all 0.3s;
+}
+
+.step:hover .step-number {
+transform: scale(1.15);
+border-color: #ee4d2d;
+}
+
+.step h3 {
+font-size: 1.125rem;
+margin-bottom: 0.5rem;
+}
+
+.step p {
+color: #666;
+font-size: 0.875rem;
+}
+
+.faq {
+background: rgba(238, 77, 45, 0.05);
+}
+
+.faq-container {
+max-width: 700px;
+margin: 0 auto;
+}
+
+.faq-item {
+background: white;
+border: 1px solid #e5e7eb;
+border-radius: 1rem;
+margin-bottom: 1rem;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.faq-item:hover {
+border-color: #ee4d2d;
+}
+
+.faq-question {
+padding: 1.5rem;
+font-weight: 600;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.faq-toggle {
+color: #ee4d2d;
+font-size: 1.5rem;
+transition: transform 0.3s;
+}
+
+.faq-item.active .faq-toggle {
+transform: rotate(180deg);
+}
+
+.faq-answer {
+padding: 0 1.5rem 1.5rem;
+color: #666;
+display: none;
+}
+
+.faq-item.active .faq-answer {
+display: block;
+animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.final-cta {
+background: linear-gradient(135deg, #0f172a 0%, #1c3144 100%);
+color: white;
+text-align: center;
+padding: 80px 20px;
+}
+
+.final-cta h2 {
+color: white;
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.final-cta p {
+color: rgba(255, 255, 255, 0.8);
+font-size: 1.125rem;
+margin-bottom: 2rem;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.final-buttons {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.cta-button-white {
+background: white;
+color: #0f172a;
+padding: 1rem 2rem;
+border-radius: 9999px;
+text-decoration: none;
+font-weight: 600;
+transition: all 0.3s;
+border: none;
+cursor: pointer;
+display: inline-block;
+}
+
+.cta-button-white:hover {
+background: #f0f0f0;
+transform: translateY(-2px);
+}
+
+footer {
+background: #0f172a;
+color: white;
+text-align: center;
+padding: 2rem;
+border-top: 1px solid #1c3144;
+}
+
+@media (max-width: 768px) {
+nav .nav-links { display: none; }
+.hero { padding: 40px 0; }
+.hero-content { grid-template-columns: 1fr; gap: 30px; }
+.hero-text h1 { font-size: 2rem; }
+.hero-buttons { flex-direction: column; }
+.benefits-layout { grid-template-columns: 1fr; gap: 30px; }
+.benefits-image { order: -1; }
+.steps-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.step-number { width: 60px; height: 60px; font-size: 1.5rem; }
+.final-cta h2 { font-size: 1.75rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+<div class="container">
+<div class="nav-content">
+<div class="logo">
+<div class="logo-icon">FZ</div>
+<span>FZ_SHOP <span style="color: #ee4d2d;">Affiliate</span></span>
+</div>
+<div class="nav-links">
+<li><a href="#benefits">Keuntungan</a></li>
+
+<li><a href="#how">Cara Kerja</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+<li><a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button">Daftar Sekarang</a></li>
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<div class="hero-text">
+<div class="badge">
+<span class="dot"></span>
+Program Affiliate Terpercaya
+</div>
+<h1>Dapatkan Penghasilan dari <span class="highlight">Laptop Premium</span></h1>
+<p>Tanpa Stok • Tanpa Modal • Tanpa Ribet. 
+Bergabunglah sebagai Affiliate Partner FZ_SHOP dan hasilkan komisi dari setiap penjualan.</p>
+
+<div class="hero-buttons">
+<a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button">🛍️ Daftar Affiliate Sekarang</a>
+<a href="#how" class="cta-button cta-button-outline">▶️ Pelajari Cara Kerjanya</a>
+</div>
+
+<div class="hero-trust-badges">
+<div class="badge-item"><span class="icon">🔒</span> Transaksi Aman via Shopee</div>
+<div class="badge-item"><span class="icon">💰</span> Komisi Jelas</div>
+<div class="badge-item"><span class="icon">📦</span> Produk Siap Jual</div>
+</div>
+</div>
+<div class="hero-image">
+<img src="https://github.com/fzshop/gambar-laptop-affiliate-1/blob/main/photo-1517336714731-489689fd1ca8.jpeg?raw=true" alt="Premium Laptop">
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Target Audience -->
+<section class="audience">
+<div class="container">
+<h2>Siapa yang Cocok Jadi Affiliate?</h2>
+<p class="subtitle">Program ini dirancang untuk siapa saja yang ingin penghasilan tambahan tanpa ribet operasional.</p>
+<div class="audience-grid">
+<div class="audience-card">
+<div class="icon-circle">👥</div>
+<h3>Content Creator</h3>
+<p>Instagram, TikTok, YouTube reviewers yang punya audiens</p>
+</div>
+<div class="audience-card">
+<div class="icon-circle">💻</div>
+<h3>Pemilik Website</h3>
+<p>Blog, Landing Page, Review Tech dengan traffic</p>
+</div>
+<div class="audience-card">
+<div class="icon-circle">📈</div>
+<h3>B2B Consultant</h3>
+<p>IT Consultant, Edukasi, Pengadaan untuk perusahaan</p>
+</div>
+<div class="audience-card">
+<div class="icon-circle">🎁</div>
+<h3>Reseller & Dropshipper</h3>
+<p>Ingin jualan tanpa perlu stok barang fisik</p>
+</div>
+<div class="audience-card">
+<div class="icon-circle">🏫</div>
+<h3>Komunitas</h3>
+<p>Kampus, Kantor, Grup Teknologi dengan members aktif</p>
+</div>
+<div class="audience-card">
+<div class="icon-circle">💡</div>
+<h3>Mahasiswa/Freelancer</h3>
+<p>Cari uang tambahan yang fleksibel dan pasif</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Why Choose Us -->
+<section id="benefits" class="benefits">
+<div class="container">
+<h2>Kenapa Memilih FZ_SHOP?</h2>
+<p class="subtitle">Kami menyediakan ekosistem yang memudahkan Anda untuk berjualan tanpa pusing memikirkan operasional.</p>
+<div class="benefits-layout">
+<div class="benefits-image">
+<img src="https://github.com/fzshop/gambar-laptop-affiliate-1/blob/main/artin-bakhan-SqLyNHbsLKQ-unsplash.jpg?raw=true" alt="Growth">
+
+</div>
+<div class="benefits-list">
+<div class="benefit-item">
+<div class="number">✓</div>
+<div>
+<h4>Produk Mudah Dijual</h4>
+<p>Laptop second premium adalah kebutuhan nyata mahasiswa & pekerja. Market luas dan sustainable!</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="number">✓</div>
+<div>
+<h4>Harga Kompetitif & Quality Control</h4>
+<p>Lulus uji 6 tahap & garansi 6 bulan. Customer puas, retur minim, repeat order tinggi.</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="number">✓</div>
+<div>
+<h4>Tanpa Risiko Operasional</h4>
+<p>Tidak perlu stok, packing, CS, atau kirim barang. Kami urus semua, Anda hanya promosi.</p>
+</div>
+</div>
+<div class="benefit-item">
+<div class="number">✓</div>
+<div>
+<h4>Shopee Official System</h4>
+<p>Transaksi tercatat otomatis & transparan via Shopee Affiliate Program resmi.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works -->
+<section id="how" class="how-it-works">
+<div class="container">
+<h2>Cara Kerja Simple & Jelas</h2>
+<p class="subtitle">Hanya 5 langkah mudah untuk mulai menghasilkan income rutin dari Shopee.</p>
+<div class="steps-grid">
+<div class="step"><div class="step-number">1</div><h3>Daftar Affiliate</h3><p>Gabung program Shopee Affiliate (gratis)</p></div>
+<div class="step"><div class="step-number">2</div><h3>Ambil Link</h3><p>Pilih produk FZ_SHOP, salin link affiliate</p></div>
+<div class="step"><div class="step-number">3</div><h3>Promosi</h3><p>Share ke medsos, blog, atau WhatsApp</p></div>
+<div class="step"><div class="step-number">4</div><h3>Closing</h3><p>Customer checkout via Shopee Official</p></div>
+<div class="step"><div class="step-number">5</div><h3>Terima Komisi</h3><p>Komisi cair otomatis ke akun Anda</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+<div class="container">
+<h2>Pertanyaan Umum</h2>
+<p class="subtitle">Jawaban untuk pertanyaan yang sering diajukan</p>
+<div class="faq-container">
+<div class="faq-item active">
+<div class="faq-question">Apakah perlu modal untuk bergabung? <span class="faq-toggle">▼</span></div>
+<div class="faq-answer">Tidak sama sekali. Pendaftaran gratis 100% dan Anda tidak perlu membeli stok barang.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Apakah harus punya NPWP? <span class="faq-toggle">▼</span></div>
+<div class="faq-answer">Untuk Shopee Affiliate, NPWP opsional di awal. Namun disarankan ada untuk potongan pajak yang lebih ringan.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Kapan komisi cair? <span class="faq-toggle">▼</span></div>
+<div class="faq-answer">Komisi dibayarkan oleh Shopee setiap minggu atau dua minggu sekali tergantung jadwal pembayaran Shopee Affiliate.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Boleh pakai iklan berbayar (Ads)? <span class="faq-toggle">▼</span></div>
+<div class="faq-answer">Boleh banget! Anda bebas menggunakan FB Ads, Google Ads, atau TikTok Ads untuk mendatangkan traffic ke link affiliate Anda.</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Bagaimana jika pembeli retur barang? <span class="faq-toggle">▼</span></div>
+<div class="faq-answer">Jika transaksi batal/retur, komisi tidak cair. Namun FZ_SHOP memiliki tingkat retur sangat rendah karena QC ketat.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+<h2>Mulai Monetisasi Sekarang</h2>
+<p>Tidak perlu bikin produk. Tidak perlu gudang. Cukup promosikan dan biarkan sistem bekerja untuk Anda.</p>
+<div class="final-buttons">
+<a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button-white">🛍️ Daftar Affiliate Sekarang</a>
+<a href="https://wa.me/6287710516847" target="_blank" class="cta-button">💬 Chat Tim Partnership</a>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2024 FZ_SHOP Official. All rights reserved.</p>
+</footer>
+
+<script>
+// FAQ Toggle
+document.querySelectorAll('.faq-item').forEach(item => {
+item.querySelector('.faq-question').addEventListener('click', function() {
+item.classList.toggle('active');
+});
+});
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({ behavior: 'smooth' });
+}
+});
+});
+</script>
+
+</body>
+</html>
