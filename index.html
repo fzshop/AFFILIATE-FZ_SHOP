@@ -1,754 +1,177 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FZ_SHOP - Program Affiliate Terpercaya</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FZ_SHOP – Program Affiliate Laptop &amp; Handphone</title>
+<meta name="description" content="Gabung sebagai Affiliate Partner FZ_SHOP dan dapatkan komisi dari penjualan laptop dan handphone lewat Shopee.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛍️%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 <style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: 'Inter', sans-serif;
-color: #1c3144;
-background-color: #f8fafb;
-line-height: 1.6;
-}
-
-.container {
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-font-family: 'Plus Jakarta Sans', sans-serif;
-font-weight: 700;
-}
-
-nav {
-background: rgba(255, 255, 255, 0.8);
-backdrop-filter: blur(10px);
-border-bottom: 1px solid #e5e7eb;
-position: fixed;
-width: 100%;
-top: 0;
-z-index: 50;
-padding: 1rem 0;
-}
-
-.nav-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.logo {
-font-size: 1.25rem;
-font-weight: 700;
-display: flex;
-align-items: center;
-gap: 0.5rem;
-}
-
-.logo-icon {
-background: #000000;
-color: white;
-width: 32px;
-height: 32px;
-border-radius: 6px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-font-size: 0.875rem;
-}
-
-.nav-links {
-display: flex;
-gap: 2rem;
-list-style: none;
-}
-
-.nav-links a {
-text-decoration: none;
-color: #1c3144;
-font-size: 0.875rem;
-font-weight: 500;
-transition: color 0.3s;
-}
-
-.nav-links a:hover {
-color: #ee4d2d;
-}
-
-.cta-button {
-background: #ee4d2d;
-color: white;
-padding: 0.75rem 1.5rem;
-border-radius: 9999px;
-text-decoration: none;
-font-weight: 600;
-transition: all 0.3s;
-border: none;
-cursor: pointer;
-box-shadow: 0 10px 20px rgba(238, 77, 45, 0.2);
-display: inline-block;
-}
-
-.cta-button:hover {
-background: #d63d1f;
-transform: translateY(-2px);
-box-shadow: 0 15px 30px rgba(238, 77, 45, 0.3);
-}
-
-.cta-button-outline {
-background: transparent;
-color: #1c3144;
-border: 2px solid #e5e7eb;
-padding: 0.6rem 1.5rem;
-}
-
-.cta-button-outline:hover {
-background: #f3f4f6;
-border-color: #ee4d2d;
-}
-
-.hero {
-margin-top: 80px;
-padding: 80px 0;
-background: linear-gradient(135deg, rgba(254, 205, 158, 0.1) 0%, transparent 100%);
-}
-
-.hero-content {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 60px;
-align-items: center;
-}
-
-.hero-text h1 {
-font-size: 3rem;
-line-height: 1.2;
-margin-bottom: 1rem;
-color: #0f172a;
-}
-
-.hero-text h1 .highlight {
-background: linear-gradient(135deg, #ee4d2d, #ff7350);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-}
-
-.hero-text .badge {
-display: inline-flex;
-align-items: center;
-gap: 0.5rem;
-background: rgba(238, 77, 45, 0.1);
-border: 1px solid rgba(238, 77, 45, 0.2);
-color: #ee4d2d;
-padding: 0.5rem 1rem;
-border-radius: 9999px;
-font-size: 0.875rem;
-font-weight: 600;
-margin-bottom: 1rem;
-}
-
-.hero-text .badge .dot {
-width: 6px;
-height: 6px;
-background: #ee4d2d;
-border-radius: 50%;
-animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-0%, 100% { opacity: 1; }
-50% { opacity: 0.5; }
-}
-
-.hero-text p {
-font-size: 1.125rem;
-color: #666;
-margin-bottom: 2rem;
-line-height: 1.7;
-}
-
-.hero-buttons {
-display: flex;
-gap: 1rem;
-margin-bottom: 2rem;
-flex-wrap: wrap;
-}
-
-.hero-trust-badges {
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-}
-
-.badge-item {
-background: #f3f4f6;
-padding: 0.75rem 1rem;
-border-radius: 0.5rem;
-border: 1px solid #e5e7eb;
-font-size: 0.875rem;
-font-weight: 500;
-display: flex;
-align-items: center;
-gap: 0.5rem;
-}
-
-.badge-item .icon {
-color: #ee4d2d;
-font-weight: bold;
-}
-
-.hero-image {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.hero-image img {
-max-width: 100%;
-height: auto;
-border-radius: 24px;
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-border: 1px solid rgba(255, 255, 255, 0.5);
-transform: rotate(2deg);
-transition: transform 0.5s;
-}
-
-.hero-image img:hover {
-transform: rotate(0deg);
-}
-
-section {
-padding: 60px 0;
-}
-
-section h2 {
-font-size: 2.25rem;
-margin-bottom: 1rem;
-text-align: center;
-color: #0f172a;
-}
-
-section .subtitle {
-text-align: center;
-color: #666;
-font-size: 1.125rem;
-margin-bottom: 3rem;
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.audience {
-background: rgba(238, 77, 45, 0.05);
-border-top: 1px solid #e5e7eb;
-border-bottom: 1px solid #e5e7eb;
-}
-
-.audience-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 1.5rem;
-}
-
-.audience-card {
-background: white;
-padding: 1.5rem;
-border-radius: 1rem;
-border: 1px solid #e5e7eb;
-transition: all 0.3s;
-}
-
-.audience-card:hover {
-border-color: #ee4d2d;
-box-shadow: 0 10px 20px rgba(238, 77, 45, 0.1);
-transform: translateY(-5px);
-}
-
-.audience-card .icon-circle {
-width: 50px;
-height: 50px;
-background: rgba(238, 77, 45, 0.1);
-border-radius: 12px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #ee4d2d;
-font-size: 1.5rem;
-margin-bottom: 1rem;
-}
-
-.audience-card h3 {
-margin-bottom: 0.5rem;
-font-size: 1.125rem;
-}
-
-.audience-card p {
-color: #666;
-font-size: 0.875rem;
-}
-
-.benefits {
-background: white;
-}
-
-.benefits-layout {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 60px;
-align-items: center;
-}
-
-.benefits-image {
-order: 2;
-}
-
-.benefits-image img {
-max-width: 100%;
-height: auto;
-border-radius: 24px;
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.benefits-list {
-order: 1;
-}
-
-.benefit-item {
-display: flex;
-gap: 1rem;
-margin-bottom: 1.5rem;
-}
-
-.benefit-item .number {
-width: 40px;
-height: 40px;
-background: rgba(238, 77, 45, 0.1);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #ee4d2d;
-font-weight: bold;
-flex-shrink: 0;
-}
-
-.benefit-item h4 {
-font-size: 1rem;
-margin-bottom: 0.25rem;
-}
-
-.benefit-item p {
-color: #666;
-font-size: 0.875rem;
-}
-
-.how-it-works {
-background: #f9fafb;
-}
-
-.steps-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-gap: 2rem;
-}
-
-.step {
-text-align: center;
-}
-
-.step-number {
-width: 80px;
-height: 80px;
-background: white;
-border: 4px solid #e5e7eb;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 2rem;
-font-weight: bold;
-color: #ee4d2d;
-margin: 0 auto 1rem;
-transition: all 0.3s;
-}
-
-.step:hover .step-number {
-transform: scale(1.15);
-border-color: #ee4d2d;
-}
-
-.step h3 {
-font-size: 1.125rem;
-margin-bottom: 0.5rem;
-}
-
-.step p {
-color: #666;
-font-size: 0.875rem;
-}
-
-.faq {
-background: rgba(238, 77, 45, 0.05);
-}
-
-.faq-container {
-max-width: 700px;
-margin: 0 auto;
-}
-
-.faq-item {
-background: white;
-border: 1px solid #e5e7eb;
-border-radius: 1rem;
-margin-bottom: 1rem;
-cursor: pointer;
-transition: all 0.3s;
-}
-
-.faq-item:hover {
-border-color: #ee4d2d;
-}
-
-.faq-question {
-padding: 1.5rem;
-font-weight: 600;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.faq-toggle {
-color: #ee4d2d;
-font-size: 1.5rem;
-transition: transform 0.3s;
-}
-
-.faq-item.active .faq-toggle {
-transform: rotate(180deg);
-}
-
-.faq-answer {
-padding: 0 1.5rem 1.5rem;
-color: #666;
-display: none;
-}
-
-.faq-item.active .faq-answer {
-display: block;
-animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-from {
-opacity: 0;
-transform: translateY(-10px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-
-.final-cta {
-background: linear-gradient(135deg, #0f172a 0%, #1c3144 100%);
-color: white;
-text-align: center;
-padding: 80px 20px;
-}
-
-.final-cta h2 {
-color: white;
-font-size: 2.5rem;
-margin-bottom: 1rem;
-}
-
-.final-cta p {
-color: rgba(255, 255, 255, 0.8);
-font-size: 1.125rem;
-margin-bottom: 2rem;
-max-width: 600px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.final-buttons {
-display: flex;
-gap: 1rem;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.cta-button-white {
-background: white;
-color: #0f172a;
-padding: 1rem 2rem;
-border-radius: 9999px;
-text-decoration: none;
-font-weight: 600;
-transition: all 0.3s;
-border: none;
-cursor: pointer;
-display: inline-block;
-}
-
-.cta-button-white:hover {
-background: #f0f0f0;
-transform: translateY(-2px);
-}
-
-footer {
-background: #0f172a;
-color: white;
-text-align: center;
-padding: 2rem;
-border-top: 1px solid #1c3144;
-}
-
-@media (max-width: 768px) {
-nav .nav-links { display: none; }
-.hero { padding: 40px 0; }
-.hero-content { grid-template-columns: 1fr; gap: 30px; }
-.hero-text h1 { font-size: 2rem; }
-.hero-buttons { flex-direction: column; }
-.benefits-layout { grid-template-columns: 1fr; gap: 30px; }
-.benefits-image { order: -1; }
-.steps-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-.step-number { width: 60px; height: 60px; font-size: 1.5rem; }
-.final-cta h2 { font-size: 1.75rem; }
-}
+:root{color-scheme:light;--bg:#ffffff;--soft:color-mix(in srgb,#888888 18%,#ffffff);--card:#ffffff;--ink:#000000;--mut:#4d4c4c;--line:color-mix(in srgb,#888888 45%,#ffffff);--acc:#4d4c4c;--acc2:#000000;--navy:#000000;--err:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 'Inter',system-ui,sans-serif;overflow-x:clip;overflow-wrap:break-word}
+h1,h2,h3{font-family:'Plus Jakarta Sans','Inter',sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.1rem);font-weight:800}h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center}h3{font-size:1.05rem}
+p{margin:0 0 1em}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 20px}section{padding:68px 0}
+.sub{text-align:center;color:var(--mut);max-width:60ch;margin:0 auto 2.2rem}.mut{color:var(--mut)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.btn{display:inline-block;border:2px solid var(--acc);background:var(--acc);color:#fff;font:600 1rem 'Inter',sans-serif;padding:12px 24px;border-radius:999px;cursor:pointer;text-decoration:none;text-align:center;transition:transform .15s,background .15s}
+.btn:hover{background:var(--acc2);transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn.ghost:hover{border-color:var(--acc);background:transparent}
+.btn.white{background:#fff;color:#000;border-color:#fff}.btn.white:hover{background:#e9e9e9}.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none}.btn.sm{padding:8px 18px;font-size:.92rem}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}header .wrap{max-width:none;padding:0 28px}@media(max-width:560px){header .wrap{padding:0 16px}}
+.logo{display:flex;align-items:center;gap:8px;font:700 1.15rem 'Plus Jakarta Sans',sans-serif;text-decoration:none}
+.logo i{background:#000;color:#fff;width:32px;height:32px;border-radius:6px;display:grid;place-items:center;font:700 .85rem 'Inter',sans-serif;font-style:normal}.logo b{color:var(--acc)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center}nav a:not(.btn){text-decoration:none;font-size:.92rem;font-weight:500}nav a:not(.btn):hover{color:var(--acc)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit;cursor:pointer}
+@media(max-width:820px){.burger{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;padding:16px 20px 22px;gap:14px}nav ul.open{display:flex}}
+.hero{padding:64px 0 72px;background:linear-gradient(180deg,#888888 0%,#ffffff 100%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center}
+@media(max-width:820px){.hero .wrap{grid-template-columns:minmax(0,1fr);gap:32px}}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#ffffff;border:1px solid #4d4c4c;color:#4d4c4c;padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:16px}
+.badge:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc)}
+.hl{background:#4d4c4c;color:#fff;font-weight:800;padding:0 .25em;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone}.hero p.lead{font-size:1.1rem;color:var(--ink);max-width:50ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.trust{display:flex;flex-wrap:wrap;gap:10px}
+.trust span{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:.85rem;font-weight:500}
+.vis{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 18px 40px #0000001a}
+.vis svg{width:100%;height:auto;display:block}.vis p{font-size:.85rem;color:var(--mut);margin:12px 0 0;text-align:center}
+.alt{background:var(--soft)}.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:transform .2s,border-color .2s}.card:hover{border-color:var(--acc);transform:translateY(-4px)}
+.card p{color:var(--mut);font-size:.92rem;margin:0}.ic{width:48px;height:48px;border-radius:12px;background:color-mix(in srgb,var(--acc) 12%,transparent);display:grid;place-items:center;font-size:1.4rem;margin-bottom:12px}
+.ben{display:grid;gap:14px;max-width:820px;margin:auto}.ben div{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.ben b.n{flex:none;width:36px;height:36px;border-radius:50%;background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc);display:grid;place-items:center}.ben p{margin:0;color:var(--mut);font-size:.92rem}.ben h3{margin-bottom:.2em}
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr))}
+.steps li{counter-increment:s;text-align:center}.steps li:before{content:counter(s);display:grid;place-items:center;width:64px;height:64px;border-radius:50%;border:4px solid var(--line);background:var(--card);color:var(--acc);font:800 1.5rem 'Plus Jakarta Sans',sans-serif;margin:0 auto 12px}
+.steps p{color:var(--mut);font-size:.9rem;margin:0}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px;max-width:760px;margin-inline:auto}summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:var(--mut)}
+.disc{max-width:760px;margin:20px auto 0;font-size:.88rem;color:var(--mut);text-align:center}
+.final{background:#4d4c4c;color:#fff;text-align:center}.final .btn:not(.white){background:transparent;border-color:#fff;color:#fff}.final .btn:not(.white):hover{background:#000;border-color:#000}.final :focus-visible{outline-color:#fff}.final h2{color:#fff}.final p{color:#ffffffcc;max-width:56ch;margin:0 auto 1.6rem}.final .cta{justify-content:center}
+footer{background:var(--navy);color:#ffffff;text-align:center;padding:28px 20px;font-size:.9rem}footer a{text-decoration:underline}
+.ov{position:fixed;inset:0;background:#000000b3;z-index:60;display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:24px 16px}.ov.on{display:flex}
+.modal{background:var(--card);color:var(--ink);border-radius:16px;width:100%;max-width:520px;padding:26px;margin:auto}
+.mh{display:flex;justify-content:space-between;gap:12px;align-items:start}.mh h2{text-align:left;font-size:1.4rem;margin:0}.x{background:none;border:0;font-size:1.8rem;line-height:1;cursor:pointer;color:var(--mut)}
+label{display:block;font-weight:500;font-size:.92rem;margin-bottom:14px}.req{color:var(--err)}
+input,select{width:100%;min-width:0;margin-top:5px;padding:11px 12px;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px}
+input.bad,select.bad{border-color:var(--err)}.err{display:none;color:var(--err);font-size:.82rem;margin-top:4px}.bad~.err{display:block}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400}.chk input{width:auto;margin-top:5px}
+.note{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:.88rem;color:var(--mut);margin:6px 0 16px}
+.serr{display:none;border:1px solid var(--err);border-radius:10px;padding:12px 14px;font-size:.9rem;margin-bottom:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:560px){section{padding:48px 0}.cta .btn{width:100%}.ov{padding:0}.modal{border-radius:0;min-height:100%;max-width:none;padding:20px 16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
+<header><div class="wrap nav">
+<a class="logo" href="#beranda"><i>FZ</i><span>FZ_SHOP <b>Affiliate</b></span></a>
+<button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav aria-label="Utama"><ul id="menu"><li><a href="#keuntungan">Keuntungan</a></li><li><a href="#cara">Cara Kerja</a></li><li><a href="#faq">FAQ</a></li><li><button class="btn sm" data-open>Daftar Sekarang</button></li></ul></nav>
+</div></header>
 
-<!-- Navigation -->
-<nav>
-<div class="container">
-<div class="nav-content">
-<div class="logo">
-<div class="logo-icon">FZ</div>
-<span>FZ_SHOP <span style="color: #ee4d2d;">Affiliate</span></span>
-</div>
-<div class="nav-links">
-<li><a href="#benefits">Keuntungan</a></li>
-
-<li><a href="#how">Cara Kerja</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-<li><a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button">Daftar Sekarang</a></li>
-</div>
-</div>
-</div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero">
-<div class="container">
-<div class="hero-content">
-<div class="hero-text">
-<div class="badge">
-<span class="dot"></span>
-Program Affiliate Terpercaya
-</div>
-<h1>Dapatkan Penghasilan dari Affiliate <span class="highlight">Laptop & Handphone Premium</span></h1>
-<p>Tanpa Stok • Tanpa Modal • Tanpa Ribet. 
-Bergabunglah sebagai Affiliate Partner FZ_SHOP dan hasilkan komisi dari setiap penjualan.</p>
-
-<div class="hero-buttons">
-<a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button">🛍️ Daftar Affiliate Sekarang</a>
-<a href="#how" class="cta-button cta-button-outline">▶️ Pelajari Cara Kerjanya</a>
-</div>
-
-<div class="hero-trust-badges">
-<div class="badge-item"><span class="icon">🔒</span> Transaksi Aman via Shopee</div>
-<div class="badge-item"><span class="icon">💰</span> Komisi Jelas</div>
-<div class="badge-item"><span class="icon">📦</span> Produk Siap Jual</div>
-</div>
-</div>
-<div class="hero-image">
-<img src="https://github.com/fzshop/gambar-laptop-affiliate-1/blob/main/iPhone%2012%20series.jpeg?raw=true" alt="Premium Laptop">
-
-</div>
-</div>
-</div>
-</section>
-
-<!-- Target Audience -->
-<section class="audience">
-<div class="container">
-<h2>Siapa yang Cocok Jadi Affiliate?</h2>
-<p class="subtitle">Program ini dirancang untuk siapa saja yang ingin penghasilan tambahan tanpa ribet operasional.</p>
-<div class="audience-grid">
-<div class="audience-card">
-<div class="icon-circle">👥</div>
-<h3>Content Creator</h3>
-<p>Instagram, TikTok, YouTube reviewers yang punya audiens</p>
-</div>
-<div class="audience-card">
-<div class="icon-circle">💻</div>
-<h3>Pemilik Website</h3>
-<p>Blog, Landing Page, Review Tech dengan traffic</p>
-</div>
-<div class="audience-card">
-<div class="icon-circle">📈</div>
-<h3>B2B Consultant</h3>
-<p>IT Consultant, Edukasi, Pengadaan untuk perusahaan</p>
-</div>
-<div class="audience-card">
-<div class="icon-circle">🎁</div>
-<h3>Reseller & Dropshipper</h3>
-<p>Ingin jualan tanpa perlu stok barang fisik</p>
-</div>
-<div class="audience-card">
-<div class="icon-circle">🏫</div>
-<h3>Komunitas</h3>
-<p>Kampus, Kantor, Grup Teknologi dengan members aktif</p>
-</div>
-<div class="audience-card">
-<div class="icon-circle">💡</div>
-<h3>Mahasiswa/Freelancer</h3>
-<p>Cari uang tambahan yang fleksibel dan pasif</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Why Choose Us -->
-<section id="benefits" class="benefits">
-<div class="container">
-<h2>Kenapa Memilih FZ_SHOP?</h2>
-<p class="subtitle">Kami menyediakan ekosistem yang memudahkan Anda untuk berjualan tanpa pusing memikirkan operasional.</p>
-<div class="benefits-layout">
-<div class="benefits-image">
-<img src="https://github.com/fzshop/gambar-laptop-affiliate-1/blob/main/artin-bakhan-SqLyNHbsLKQ-unsplash.jpg?raw=true" alt="Growth">
-
-</div>
-<div class="benefits-list">
-<div class="benefit-item">
-<div class="number">✓</div>
+<main>
+<section class="hero" id="beranda"><div class="wrap">
 <div>
-<h4>Produk Mudah Dijual</h4>
-<p>Laptop dan handphone second premium adalah kebutuhan nyata mahasiswa & pekerja. Market luas dan sustainable!</p>
+<span class="badge">Program Affiliate Terpercaya</span>
+<h1>Dapatkan Penghasilan dari Affiliate <span class="hl">Laptop &amp; Handphone Premium</span></h1>
+<p class="lead">Tanpa stok, tanpa modal, tanpa ribet. Bergabunglah sebagai Affiliate Partner FZ_SHOP dan dapatkan komisi dari setiap penjualan yang tercatat.</p>
+<div class="cta"><button class="btn" data-open>🛍️ Daftar Affiliate Sekarang</button><a class="btn ghost" href="#cara">Pelajari Cara Kerjanya</a></div>
+<div class="trust"><span>🔒 Transaksi via Shopee</span><span>💰 Komisi tercatat di Shopee</span><span>📦 Produk siap jual</span></div>
 </div>
-</div>
-<div class="benefit-item">
-<div class="number">✓</div>
-<div>
-<h4>Harga Kompetitif & Quality Control</h4>
-<p>Lulus uji 6 tahap & garansi 6 bulan. Customer puas, retur minim, repeat order tinggi.</p>
-</div>
-</div>
-<div class="benefit-item">
-<div class="number">✓</div>
-<div>
-<h4>Tanpa Risiko Operasional</h4>
-<p>Tidak perlu stok, packing, CS, atau kirim barang. Kami urus semua, Anda hanya promosi.</p>
-</div>
-</div>
-<div class="benefit-item">
-<div class="number">✓</div>
-<div>
-<h4>Shopee Official System</h4>
-<p>Transaksi tercatat otomatis & transparan via Shopee Affiliate Program resmi.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<div class="vis" aria-label="Ilustrasi alur affiliate">
+<svg viewBox="0 0 400 220" role="img" aria-label="Laptop dan handphone dengan alur link ke komisi">
+<rect x="40" y="40" width="170" height="110" rx="10" fill="#000000"/><rect x="50" y="50" width="150" height="90" rx="4" fill="#4d4c4c"/>
+<path d="M20 160h210l-14 18H34z" fill="#888888"/>
+<rect x="260" y="60" width="80" height="150" rx="14" fill="#000000"/><rect x="268" y="76" width="64" height="118" rx="6" fill="#4d4c4c"/><circle cx="300" cy="68" r="3" fill="#888888"/>
+<text x="125" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Link</text><text x="125" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Affiliate</text>
+<text x="300" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Komisi</text>
+<path d="M215 100q25-30 45 0" stroke="#888888" stroke-width="3" fill="none" stroke-dasharray="5 5"/></svg>
+<p>Bagikan link, customer checkout di Shopee, komisi tercatat di akun Anda.</p></div>
+</div></section>
 
-<!-- How It Works -->
-<section id="how" class="how-it-works">
-<div class="container">
-<h2>Cara Kerja Simple & Jelas</h2>
-<p class="subtitle">Hanya 5 langkah mudah untuk mulai menghasilkan income rutin dari Shopee.</p>
-<div class="steps-grid">
-<div class="step"><div class="step-number">1</div><h3>Daftar Affiliate</h3><p>Gabung program Shopee Affiliate (gratis)</p></div>
-<div class="step"><div class="step-number">2</div><h3>Ambil Link</h3><p>Pilih produk FZ_SHOP, salin link affiliate</p></div>
-<div class="step"><div class="step-number">3</div><h3>Promosi</h3><p>Share ke medsos, blog, atau WhatsApp</p></div>
-<div class="step"><div class="step-number">4</div><h3>Closing</h3><p>Customer checkout via Shopee Official</p></div>
-<div class="step"><div class="step-number">5</div><h3>Terima Komisi</h3><p>Komisi cair otomatis ke akun Anda</p></div>
-</div>
-</div>
-</section>
+<section class="alt"><div class="wrap"><h2>Siapa yang cocok jadi affiliate?</h2><p class="sub">Untuk siapa saja yang ingin penghasilan tambahan tanpa urusan operasional.</p>
+<div class="grid">
+<div class="card"><span class="ic">👥</span><h3>Content Creator</h3><p>Reviewer Instagram, TikTok, dan YouTube yang punya audiens.</p></div>
+<div class="card"><span class="ic">💻</span><h3>Pemilik Website</h3><p>Blog, landing page, dan situs review teknologi dengan traffic.</p></div>
+<div class="card"><span class="ic">📈</span><h3>B2B Consultant</h3><p>Konsultan IT, edukasi, dan pengadaan untuk perusahaan.</p></div>
+<div class="card"><span class="ic">🎁</span><h3>Reseller &amp; Dropshipper</h3><p>Ingin berjualan tanpa perlu stok barang fisik.</p></div>
+<div class="card"><span class="ic">🏫</span><h3>Komunitas</h3><p>Kampus, kantor, dan grup teknologi dengan anggota aktif.</p></div>
+<div class="card"><span class="ic">💡</span><h3>Mahasiswa/Freelancer</h3><p>Cari uang tambahan yang fleksibel.</p></div></div></div></section>
 
-<!-- FAQ -->
-<section id="faq" class="faq">
-<div class="container">
-<h2>Pertanyaan Umum</h2>
-<p class="subtitle">Jawaban untuk pertanyaan yang sering diajukan</p>
-<div class="faq-container">
-<div class="faq-item active">
-<div class="faq-question">Apakah perlu modal untuk bergabung? <span class="faq-toggle">▼</span></div>
-<div class="faq-answer">Tidak sama sekali. Pendaftaran gratis 100% dan Anda tidak perlu membeli stok barang.</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Apakah harus punya NPWP? <span class="faq-toggle">▼</span></div>
-<div class="faq-answer">Untuk Shopee Affiliate, NPWP opsional di awal. Namun disarankan ada untuk potongan pajak yang lebih ringan.</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Kapan komisi cair? <span class="faq-toggle">▼</span></div>
-<div class="faq-answer">Komisi dibayarkan oleh Shopee setiap minggu atau dua minggu sekali tergantung jadwal pembayaran Shopee Affiliate.</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Boleh pakai iklan berbayar (Ads)? <span class="faq-toggle">▼</span></div>
-<div class="faq-answer">Boleh banget! Anda bebas menggunakan Meta Ads, Google Ads, atau TikTok Ads untuk mendatangkan traffic ke link affiliate Anda.</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">Bagaimana jika pembeli retur barang? <span class="faq-toggle">▼</span></div>
-<div class="faq-answer">Jika transaksi batal/retur, komisi tidak cair. Namun FZ_SHOP memiliki tingkat retur sangat rendah karena QC ketat.</div>
-</div>
-</div>
-</div>
-</section>
+<section id="keuntungan"><div class="wrap"><h2>Kenapa memilih FZ_SHOP?</h2><p class="sub">Kami menyiapkan produk dan operasional, Anda fokus promosi.</p>
+<div class="ben">
+<div><b class="n">✓</b><span><h3>Produk mudah dijual</h3><p>Laptop dan handphone second premium adalah kebutuhan nyata mahasiswa dan pekerja.</p></span></div>
+<div><b class="n">✓</b><span><h3>Harga kompetitif dan quality control</h3><p>Lulus uji 6 tahap dan garansi 6 bulan, sehingga customer lebih yakin membeli.</p></span></div>
+<div><b class="n">✓</b><span><h3>Tanpa beban operasional</h3><p>Tidak perlu stok, packing, CS, atau kirim barang. Kami yang mengurus, Anda fokus promosi.</p></span></div>
+<div><b class="n">✓</b><span><h3>Sistem resmi Shopee</h3><p>Transaksi dan komisi tercatat lewat Shopee Affiliate Program.</p></span></div>
+</div></div></section>
 
-<!-- Final CTA -->
-<section class="final-cta">
-<h2>Mulai Monetisasi Sekarang</h2>
-<p>Tidak perlu bikin produk. Tidak perlu gudang. Cukup promosikan dan biarkan sistem bekerja untuk Anda.</p>
-<div class="final-buttons">
-<a href="https://forms.gle/RJ1PVeXRjJYJNzhKA" target="_blank" class="cta-button-white">🛍️ Daftar Affiliate Sekarang</a>
-<a href="https://wa.me/6287710516847" target="_blank" class="cta-button">💬 Chat Tim Partnership</a>
-</div>
-</section>
+<section class="alt" id="cara"><div class="wrap"><h2>Cara kerja sederhana</h2><p class="sub">Lima langkah untuk mulai.</p>
+<ol class="steps"><li><h3>Daftar</h3><p>Isi formulir di situs ini, gratis.</p></li><li><h3>Terima tutorial</h3><p>Kami kirim panduan lengkap lewat WhatsApp atau email.</p></li><li><h3>Ambil link</h3><p>Pilih produk FZ_SHOP dan salin link affiliate.</p></li><li><h3>Promosi</h3><p>Bagikan ke media sosial, blog, atau WhatsApp.</p></li><li><h3>Terima komisi</h3><p>Komisi dibayarkan Shopee sesuai ketentuan program.</p></li></ol></div></section>
 
-<!-- Footer -->
-<footer>
-<p>&copy; 2025 FZ_SHOP - All rights reserved.</p>
-</footer>
+<section id="faq"><div class="wrap"><h2>Pertanyaan umum</h2><p class="sub">Jawaban untuk pertanyaan yang sering diajukan.</p>
+<details open><summary>Apakah perlu modal untuk bergabung?</summary><p>Tidak. Pendaftaran gratis dan Anda tidak perlu membeli stok barang.</p></details>
+<details><summary>Apakah harus punya NPWP?</summary><p>Untuk Shopee Affiliate, NPWP opsional di awal. Disarankan ada untuk urusan pajak penghasilan.</p></details>
+<details><summary>Kapan komisi cair?</summary><p>Komisi dibayarkan oleh Shopee sesuai jadwal pembayaran Shopee Affiliate.</p></details>
+<details><summary>Boleh pakai iklan berbayar (Ads)?</summary><p>Boleh. Anda bebas memakai Meta Ads, Google Ads, atau TikTok Ads, selama mengikuti ketentuan Shopee Affiliate.</p></details>
+<details><summary>Bagaimana jika pembeli meretur barang?</summary><p>Jika transaksi batal atau diretur, komisi tidak cair. FZ_SHOP menjaga kualitas lewat QC ketat agar retur minim.</p></details>
+<p class="disc">Besar komisi, jadwal pembayaran, dan syarat program mengikuti ketentuan Shopee Affiliate Program dan dapat berubah. Mendaftar di sini tidak menjamin penghasilan tertentu.</p></div></section>
 
+<section class="final"><div class="wrap"><h2>Mulai monetisasi sekarang</h2><p>Tidak perlu membuat produk dan tidak perlu gudang. Cukup promosikan produknya.</p>
+<div class="cta"><button class="btn white" data-open>🛍️ Daftar Affiliate Sekarang</button><a class="btn wa" href="#" target="_blank" rel="noopener">💬 Chat Tim Partnership</a></div></div></section>
+</main>
+<footer>© <span id="yr"></span> FZ_SHOP. Seluruh hak dilindungi. · <a class="ml" href="#"><span data-em></span></a></footer>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal" id="md"></div></div>
 <script>
-// FAQ Toggle
-document.querySelectorAll('.faq-item').forEach(item => {
-item.querySelector('.faq-question').addEventListener('click', function() {
-item.classList.toggle('active');
-});
-});
-
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-e.preventDefault();
-const target = document.querySelector(this.getAttribute('href'));
-if (target) {
-target.scrollIntoView({ behavior: 'smooth' });
-}
-});
-});
+// ===== KONFIGURASI: ubah di sini =====
+var CONFIG={nama:"FZ_SHOP",wa:"6287710516847",email:"fzshopstores@gmail.com",
+sheetUrl:"https://script.google.com/macros/s/AKfycbx-Z2w3mmYkDXHMD63fjWVll-0fFaorgiVlI37v9j0S43WaBXshYliK85NDObfmyk6QDw/exec",
+formName:"Pendaftaran Affiliate FZ_SHOP"};
+// =====================================
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.from((r||document).querySelectorAll(s))};
+function waUrl(t){return 'https://wa.me/'+CONFIG.wa+(t?'?text='+encodeURIComponent(t):'')}
+$('#yr').textContent=new Date().getFullYear();$('[data-em]').textContent=CONFIG.email;$('.ml').href='mailto:'+CONFIG.email;
+$('.wa').href=waUrl('Halo, saya ingin bertanya tentang program affiliate FZ_SHOP.');
+var b=$('.burger'),mn=$('#menu');b.onclick=function(){var o=mn.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+$$('#menu a').forEach(function(a){a.onclick=function(){mn.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+var ov=$('#ov'),md=$('#md'),last=null,sending=false;
+function formHtml(){return '<div class="mh"><h2 id="mt">Pendaftaran Affiliate FZ_SHOP</h2><button class="x" aria-label="Tutup" data-close>×</button></div>'+
+'<p class="mut" style="margin:6px 0 16px">Setelah mendaftar, Anda akan menerima tutorial lengkap affiliate melalui WhatsApp atau email. Pastikan data yang diisi benar dan aktif.</p>'+
+'<form id="f" novalidate><div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input id="hp" tabindex="-1" autocomplete="off"></label></div>'+
+'<label>Nama lengkap <span class="req">*</span><input name="Nama Lengkap" required autocomplete="name"><span class="err">Isi nama lengkap Anda.</span></label>'+
+'<label>Nomor WhatsApp aktif <span class="req">*</span><input type="tel" name="WhatsApp" required data-t="hp" placeholder="08xxxxxxxxxx" autocomplete="tel"><span class="err">Isi nomor WhatsApp Indonesia yang valid, contoh: 081234567890</span></label>'+
+'<label>Email aktif <span class="req">*</span><input type="email" name="Email" required data-t="email" autocomplete="email"><span class="err">Format email belum benar, contoh: nama@gmail.com</span></label>'+
+'<label>Apakah Anda siap mengikuti tutorial affiliate yang diberikan? <span class="req">*</span><select name="Kesiapan" required><option value="">Pilih jawaban</option><option>Ya, siap mengikuti</option><option>Ya, masih belajar</option></select><span class="err">Pilih salah satu jawaban.</span></label>'+
+'<label class="chk"><input type="checkbox" id="c1"> <span>Saya setuju data ini digunakan FZ_SHOP untuk menghubungi saya terkait program affiliate. <span class="req">*</span></span></label>'+
+'<div class="note">Pendaftaran tidak menjamin penghasilan tertentu. Komisi dan pembayaran mengikuti ketentuan Shopee Affiliate Program.</div>'+
+'<div class="serr" id="serr" role="alert"><strong>Data belum terkirim.</strong> Terjadi kendala koneksi. Coba lagi, atau kirim lewat <a href="#" id="waFb" target="_blank" rel="noopener">WhatsApp</a>.</div>'+
+'<div class="row"><button class="btn" id="send" type="submit">Kirim Pendaftaran</button><button class="btn ghost" type="button" data-close>Batal</button></div></form>'}
+function openM(){last=document.activeElement;md.innerHTML=formHtml();ov.classList.add('on');document.body.style.overflow='hidden';$('#f input[name]').focus();$('#f').addEventListener('submit',submit);
+$('#f').addEventListener('focusout',function(e){if(e.target.matches('input[name],select'))e.target.classList.toggle('bad',!ok(e.target))})}
+function closeM(){ov.classList.remove('on');document.body.style.overflow='';if(last)last.focus()}
+function ok(f){var v=f.value.trim();if(f.required&&!v)return false;
+if(v&&f.dataset.t==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v))return false;
+if(v&&f.dataset.t==='hp'&&!/^(\+62|62|0)8\d{7,12}$/.test(v.replace(/[\s-]/g,'')))return false;return true}
+function collect(){var o={};$$('#f input[name],#f select').forEach(function(f){o[f.name]=f.value.trim()});return o}
+function msg(o){return 'Halo FZ_SHOP, saya mendaftar program affiliate:\n\n'+Object.keys(o).map(function(k){return k+': '+o[k]}).join('\n')}
+function done(o,sent){md.innerHTML='<div class="mh"><h2 id="mt">'+(sent?'Pendaftaran terkirim':'Satu langkah lagi')+'</h2><button class="x" aria-label="Tutup" data-close>×</button></div>'+
+'<p style="margin-top:14px">'+(sent?'Terima kasih. Data Anda sudah kami terima dan tutorial affiliate akan dikirim melalui WhatsApp atau email.':'Tekan tombol WhatsApp di bawah untuk mengirim data pendaftaran Anda ke tim kami.')+'</p>'+
+'<div class="note">Pendaftaran ini belum menjamin penghasilan. Komisi mengikuti ketentuan Shopee Affiliate Program.</div>'+
+'<div class="row"><a class="btn" href="'+waUrl(msg(o))+'" target="_blank" rel="noopener">'+(sent?'Konfirmasi via WhatsApp':'Kirim via WhatsApp')+'</a><button class="btn ghost" data-close>Tutup</button></div>'}
+function submit(e){e.preventDefault();if(sending)return;var bad=null;
+$$('#f input[name],#f select').forEach(function(f){var g=ok(f);f.classList.toggle('bad',!g);if(!g&&!bad)bad=f});
+if(bad){bad.focus();return}if(!$('#c1').checked){$('#c1').focus();$('#serr').style.display='none';alert('Centang persetujuan terlebih dahulu.');return}
+var o=collect();
+if(!CONFIG.sheetUrl){done(o,false);return}
+sending=true;var s=$('#send');s.disabled=true;s.textContent='Mengirim…';$('#serr').style.display='none';
+fetch(CONFIG.sheetUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({form:CONFIG.formName,data:Object.assign({Persetujuan:'Ya'},o),website:$('#hp').value})})
+.then(function(r){return r.json()}).then(function(j){return !!(j&&j.ok)}).catch(function(){return false})
+.then(function(g){sending=false;if(g){done(o,true)}else{s.disabled=false;s.textContent='Kirim Pendaftaran';$('#waFb').href=waUrl(msg(o));$('#serr').style.display='block'}})}
+document.addEventListener('click',function(e){if(e.target.closest('[data-open]')){openM();return}
+if(e.target.closest('[data-close]')||e.target===ov)closeM()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('on'))closeM()});
 </script>
-
 </body>
 </html>
