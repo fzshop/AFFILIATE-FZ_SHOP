@@ -116,7 +116,7 @@ input.bad,select.bad{border-color:var(--err)}.err{display:none;color:var(--err);
 <section class="final"><div class="wrap"><h2>Mulai monetisasi sekarang</h2><p>Tidak perlu membuat produk dan tidak perlu gudang. Cukup promosikan produknya.</p>
 <div class="cta"><button class="btn white" data-open>🛍️ Daftar Affiliate Sekarang</button><a class="btn wa" href="#" target="_blank" rel="noopener">💬 Chat Tim Partnership</a></div></div></section>
 </main>
-<footer>© <span id="yr"></span> FZ_SHOP. Seluruh hak dilindungi. · <a class="ml" href="#"><span data-em></span></a></footer>
+<footer>© <span id="yr"></span> FZ_SHOP. Seluruh hak dilindungi.</footer>
 
 <div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="modal" id="md"></div></div>
 <script>
@@ -127,7 +127,7 @@ formName:"Pendaftaran Affiliate FZ_SHOP"};
 // =====================================
 var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return Array.from((r||document).querySelectorAll(s))};
 function waUrl(t){return 'https://wa.me/'+CONFIG.wa+(t?'?text='+encodeURIComponent(t):'')}
-$('#yr').textContent=new Date().getFullYear();$('[data-em]').textContent=CONFIG.email;$('.ml').href='mailto:'+CONFIG.email;
+$('#yr').textContent=new Date().getFullYear();
 $('.wa').href=waUrl('Halo, saya ingin bertanya tentang program affiliate FZ_SHOP.');
 var b=$('.burger'),mn=$('#menu');b.onclick=function(){var o=mn.classList.toggle('open');b.setAttribute('aria-expanded',o)};
 $$('#menu a').forEach(function(a){a.onclick=function(){mn.classList.remove('open');b.setAttribute('aria-expanded',false)}});
